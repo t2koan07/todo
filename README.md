@@ -1,12 +1,17 @@
-# React + Vite
+# Todo Application  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Todo app created for the **Web Application Development** course at Oulu University of Applied Sciences.  
 
-Currently, two official plugins are available:
+The project is built step by step, starting from a basic React frontend and later expanded with a backend, database, and authentication.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Technologies used:** React, Vite, Node.js, Express, PostgreSQL  
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Progress  
+- Part 1: Done  
+- Part 2: Not started  
+- Part 3: Not started  
+- Part 4: Not started  
+- Part 5: Not started  
+- Part 6: Not started  
+- Part 7: Not started  
+- Part 8: Not started

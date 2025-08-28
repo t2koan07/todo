@@ -9,7 +9,7 @@ The project is built step by step, starting from a basic React frontend and late
 ## Project Progress  
 - Part 1: Done  
 - Part 2: Done
-- Part 3: Not started  
+- Part 3: Done
 - Part 4: Not started  
 - Part 5: Not started  
 - Part 6: Not started  

@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import { pool } from '../helper/db.js'
+import { auth } from '../helper/auth.js'
 
 const router = Router()
 
@@ -10,28 +11,23 @@ router.get('/', (req, res, next) => {
   })
 })
 
-router.post('/create', (req, res, next) => {
+router.post('/create', auth, (req, res, next) => {
   const { task } = req.body
-  if (!task || !task.description || !task.description.trim()) {
-    const error = new Error('Task is required')
-    error.status = 400
-    return next(error)
-  }
+  if (!task) return res.status(400).json({ error: 'Task is required' })
 
   pool.query(
-    'INSERT INTO task (description) VALUES ($1) RETURNING id, description',
-    [task.description.trim()],
+    'insert into task (description) values ($1) returning *',
+    [task.description],
     (err, result) => {
       if (err) return next(err)
-      const row = result.rows[0]
-      res.status(201).json({ id: row.id, description: row.description })
+      res.status(201).json({ id: result.rows[0].id, description: task.description })
     }
   )
 })
 
-router.delete('/delete/:id', (req, res, next) => {
+router.delete('/delete/:id', auth, (req, res, next) => {
   const { id } = req.params
-  pool.query('DELETE FROM task WHERE id = $1', [id], (err, result) => {
+  pool.query('delete from task WHERE id = $1', [id], (err, result) => {
     if (err) return next(err)
     if (result.rowCount === 0) {
       const error = new Error('Task not found')

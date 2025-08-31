@@ -14,4 +14,4 @@ The project is built step by step, starting from a basic React frontend and late
 - Part 5: Done  
 - Part 6: Done
 - Part 7: Done
-- Part 8: Not started
+- Part 8: Done

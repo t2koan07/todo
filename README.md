@@ -4,8 +4,6 @@ A simple Todo app created for the **Web Application Development** course at Oulu
 
 The project is built step by step, starting from a basic React frontend and later expanded with a backend, database, and authentication.  
 
-**Technologies used:** React, Vite, Node.js, Express, PostgreSQL  
-
 ## Project Progress  
 - Part 1: Done  
 - Part 2: Done
